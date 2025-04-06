@@ -1,0 +1,5 @@
+echo *.log > .gitignore
+echo node_modules/ >> .gitignore
+echo dist/ >> .gitignore
+echo build/ >> .gitignore
+echo .DS_Store >> .gitignore
