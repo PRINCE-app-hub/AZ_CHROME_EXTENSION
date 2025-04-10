@@ -1,28 +1,32 @@
-# MAANG Problem Bookmarking Chrome Extension
+# 🧩 AZ Problem Tracker - Chrome Extension
 
-This Chrome extension allows users to bookmark coding problems from [maang.in](https://maang.in) for quick and easy access later. It's a lightweight tool designed to help students and developers stay organized during interview prep and practice sessions.
-
----
-
-## 🔧 Features
-
-- 📌 One-click bookmarking of problems from maang.in
-- 💾 Saves bookmarks locally using Chrome storage
-- 🔍 Easy access to saved problems from the popup UI
-- 🧹 Simple and clean interface
+A lightweight Chrome Extension to help you **bookmark and track coding problems** from [maang.in](https://maang.in/) easily.
 
 ---
 
-## 🚀 Installation
+## 🔍 Features
 
-1. Clone or download this repository
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable **Developer Mode** (toggle in the top right)
-4. Click **Load Unpacked**
-5. Select the project folder (e.g., `AZ_CHROME_EXTENSION`)
+- 🖱️ Add a "Bookmark" button directly to problem pages  
+- ✅ Save problems with their name and URL to Chrome sync storage  
+- 🧾 View all your bookmarked problems in a popup  
+- 🚀 Open any problem with one click  
+- ❌ Delete bookmarks easily  
+- ✨ Sleek animated popup UI
 
 ---
 
-## 📁 Project Structure
+## 🧠 What I Learned
 
-AZ_CHROME_EXTENSION/ ├── manifest.json ├── popup.html ├── popup.js ├── styles.css └── ...other files
+This project helped me deeply understand how Chrome Extensions work:
+
+### ✅ Skills Gained
+- 📦 Setting up a clean extension structure (`manifest.json`, content/background/popup scripts)
+- 🔁 Using `chrome.storage.sync` for persistent bookmarking
+- 📬 Messaging between background and content scripts
+- 🧪 Debugging service workers and extension behavior in Chrome DevTools
+- 💡 Building a dynamic and responsive popup UI
+
+### 🚧 Challenges Faced
+- Fixing `manifest.json` errors and getting paths right  
+- Figuring out why the popup didn’t display or store bookmarks  
+- Locating logs in different contexts (popup, content, background)  
