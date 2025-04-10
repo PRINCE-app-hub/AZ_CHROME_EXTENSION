@@ -1,0 +1,85 @@
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for each bookmark */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Base styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .bookmarks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+/* indvidual bookmark */
+  .bookmark {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: fadeInLeft 0.4s ease forwards;
+  }
+  
+  .bookmark-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    flex: 1;
+  }
+  
+  .bookmark-controls img {
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .bookmark-controls img:hover {
+    transform: scale(1.2);
+  }
+  

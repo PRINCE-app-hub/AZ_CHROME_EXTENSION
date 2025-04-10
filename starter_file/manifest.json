@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "AZ Problem Tracker",
+  "version": "0.1",
+  "description": "A Chrome Extension that helps track problems on AZ",
+  "author": "Prince Kumar",
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://maang.in/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://maang.in/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/bookmark.png",
+        "assets/delete.png",
+        "assets/play.png",
+        "assets/ext-icon.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "AZ Problem Tracker"
+  }
+}
